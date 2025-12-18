@@ -9,7 +9,7 @@ namespace MSFD_ProductManagementApp.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"server=np:\\.\pipe\LOCALDB#3E8301FC\tsql\query;Database=ProductDB;Integrated Security=true;TrustServerCertificate=true",
+            optionsBuilder.UseSqlServer(@"server=np:\\.\pipe\LOCALDB#6E319E16\tsql\query;Database=ProductDB;Integrated Security=true;TrustServerCertificate=true",
                 options => options.EnableRetryOnFailure(
                     maxRetryCount: 3,
                     maxRetryDelay: TimeSpan.FromSeconds(30),
